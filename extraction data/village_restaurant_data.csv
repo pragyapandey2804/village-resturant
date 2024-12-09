@@ -1,0 +1,51 @@
+Item Name,Temperature (°F),Weather Condition,Village Busy,Competitor Price (Lowest),Village Restaurant Price (Dummy)
+Rasam,36,Rain,False,11.68,11.68
+Sambar,81,Snow,True,13.58,13.58
+Mulligatawny Soup,35,Rain,True,14.63,19.94
+Garden Salad,60,Clear,False,11.16,11.16
+Tomato Soup,76,Snow,True,6.81,6.81
+Katchumber Salad,59,Snow,True,3.13,3.13
+Idly,35,Rain,True,8.49,10.45
+Podi Idly,55,Clear,True,10.78,10.78
+Medu Vada,31,Rain,False,10.23,10.23
+Combo,33,Rain,True,3.33,4.65
+Dahi Vada,57,Snow,False,13.43,13.43
+Batata Vada,82,Clear,False,14.09,14.09
+Samosa,54,Rain,True,5.66,5.66
+Dahi Bhalla,79,Clear,True,7.59,7.59
+Veg Fried Rice,85,Clear,True,10.47,10.47
+Chinese Dosa,44,Rain,False,14.31,14.31
+Sada Dosa,57,Clear,True,13.41,13.41
+Masala Dosa,69,Clear,False,5.03,5.03
+Butter Sada Dosa,74,Rain,True,6.08,6.08
+Butter Masala Dosa,80,Clear,True,10.78,10.78
+Ghee Roast,63,Clear,False,13.13,13.13
+Mysore Masala Dosa,53,Clear,False,11.33,11.33
+Set Dosa,41,Clear,False,10.64,10.64
+Mushroom Masala Dosa,49,Snow,True,6.98,6.98
+Paneer Masala Dosa,38,Rain,False,4.36,4.36
+Spinach Masala Dosa,64,Rain,False,13.45,13.45
+Pondicherry Masala Dosa,47,Rain,True,10.32,10.32
+Cheese Sada Dosa,85,Snow,False,8.8,8.8
+Onion Rava Masala Dosa,49,Rain,True,11.31,11.31
+Coconut Rava Masala Dosa,44,Clear,False,5.48,5.48
+Chana Masala,67,Clear,False,12.43,12.43
+Palak Paneer,49,Snow,True,14.48,14.48
+Paneer Tikka Masala,57,Rain,False,3.12,3.12
+Kadai Paneer,68,Snow,False,5.16,5.16
+Malai Kofta,66,Snow,False,5.37,5.37
+Bhindi Masala,74,Snow,True,6.66,6.66
+Egg Plant Curry,79,Clear,True,14.23,14.23
+Pongal,74,Rain,True,3.54,3.54
+Avial,76,Snow,False,5.86,5.86
+South Indian Thali,56,Rain,False,12.17,12.17
+North Indian Thali,59,Snow,False,10.66,10.66
+Paratha,55,Rain,True,10.35,10.35
+Poori,67,Rain,False,8.07,8.07
+Lemon Rice,51,Snow,True,12.61,12.61
+Coconut Rice,81,Snow,True,11.86,11.86
+Yogurt Rice,67,Snow,False,14.73,14.73
+Gulab Jamun,38,Clear,False,12.47,12.47
+Rasamalai,51,Snow,True,12.29,12.29
+Badam Halwa,62,Snow,True,11.72,11.72
+Sprite,62,Clear,True,13.86,13.86

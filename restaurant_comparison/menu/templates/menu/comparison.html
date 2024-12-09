@@ -1,0 +1,400 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village - Soul Restaurant</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #555;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .highlight {
+            background-color: #d4edda;
+            font-weight: bold;
+        }
+
+        /* Busy Time Section */
+        .busy-time {
+            margin-top: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .busy-time h3 {
+            margin: 0;
+            color: #555;
+        }
+
+        .busy-time p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Village - Soul Restaurant</h1>
+        <p>Compare prices for similar items from nearby restaurants to make the best choice.</p>
+    </header>
+
+    <!-- Table Section -->
+    <h2>Price Comparison of Village - Soul Restaurant with Other Restaurants</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Village Restaurant</th>
+                <th>Chennai Dosas</th>
+                <th>Dosa World</th>
+                <th>House of Dosas</th>
+                <th>Taste of Chennai</th>
+                <th>Mithaas</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{ row.item_name }}</td>
+                    <td class="{% if row.price_village == row.min_price %}highlight{% endif %}">
+                        {{ row.price_village|default:"N/A" }}
+                    </td>
+                    <td>{{ row.chennai_dosas|default:"N/A" }}</td>
+                    <td>{{ row.dosa_world|default:"N/A" }}</td>
+                    <td>{{ row.house_of_dosas|default:"N/A" }}</td>
+                    <td>{{ row.taste_of_chennai|default:"N/A" }}</td>
+                    <td>{{ row.mithaas|default:"N/A" }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="7">No data available</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Busy Time Section -->
+    <div class="busy-time">
+        <h3>Busy Times for Village - Soul of India Restaurant</h3>
+        <p><strong>Lunch Hours:</strong> 11:00 AM - 3:00 PM</p>
+        <p><strong>Dinner Hours:</strong> 5:00 PM - 10:00 PM</p>
+    </div>
+</body>
+</html>
+
+    <!-- Weather Section -->
+    <div class="info-section">
+        <h3>Current Weather Near Village - Soul of India</h3>
+        <p><strong>Temperature:</strong> {{ weather_info.temperature }} °F</p>
+        <p><strong>Conditions:</strong> {{ weather_info.description }}</p>
+        <p><strong>Current Time:</strong> {{ current_time }}</p>
+    </div>
+
+    <h2>Price Comparison of Village - Soul Restaurant with Other Restaurants</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Village Restaurant</th>
+                <th>Chennai Dosas</th>
+                <th>Dosa World</th>
+                <th>House of Dosas</th>
+                <th>Taste of Chennai</th>
+                <th>Mithaas</th>
+                <th>Predicted Village Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{ row.item_name }}</td>
+                    <td>{{ row.price_village|default:"N/A" }}</td>
+                    <td>{{ row.chennai_dosas|default:"N/A" }}</td>
+                    <td>{{ row.dosa_world|default:"N/A" }}</td>
+                    <td>{{ row.house_of_dosas|default:"N/A" }}</td>
+                    <td>{{ row.taste_of_chennai|default:"N/A" }}</td>
+                    <td>{{ row.mithaas|default:"N/A" }}</td>
+                    <td>{{ row.predicted_village_price|default:"N/A" }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="8">No data available</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    
+</body>
+</html> {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village - Soul Restaurant</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+    
+        header {
+            background-color: #28a745;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+    
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+    
+        header p {
+            margin-top: 5px;
+            font-size: 1rem;
+            color: #fff;
+        }
+    
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 8px;
+        }
+    
+        th {
+            background-color: #f4f4f4;
+            color: #555;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+    
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            font-size: 0.9rem; /* Reduced font size */
+        }
+    
+        td {
+            text-align: left; /* Left align table data */
+        }
+    
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    
+        .highlight {
+            background-color: #d4edda;
+            font-weight: bold;
+        }
+    
+        .info-section {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+    
+        .info-section h3 {
+            color: #333;
+            font-size: 1.5rem;
+        }
+    
+        .info-section p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+    
+        /* Busy Time Section */
+        .busy-time {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+    
+        .busy-time h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+    
+        .busy-time p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 8px;
+        }
+    
+        /* Predicted Price Section */
+        .predicted-price {
+            margin-top: 30px;
+        }
+    
+        .predicted-price table {
+            border-radius: 8px;
+        }
+    
+        .predicted-price th, .predicted-price td {
+            font-size: 0.9rem; /* Reduced font size */
+            text-align: left; /* Left align table data */
+            padding: 12px 15px;
+        }
+    
+        .predicted-price th {
+            background-color: #28a745;
+            color: white;
+        }
+    
+        .predicted-price td {
+            background-color: #f9f9f9;
+        }
+    
+        .predicted-price td:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Village - Soul Restaurant</h1>
+        <p>Compare prices for similar items from nearby restaurants to make the best choice.</p>
+    </header>
+
+    <!-- Table Section (Comparison) -->
+    <h2>Price Comparison of Village - Soul Restaurant with Other Restaurants</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Village Restaurant</th>
+                <th>Chennai Dosas</th>
+                <th>Dosa World</th>
+                <th>House of Dosas</th>
+                <th>Taste of Chennai</th>
+                <th>Mithaas</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{ row.item_name }}</td>
+                    <td class="{% if row.price_village == row.min_price %}highlight{% endif %}">
+                        {{ row.price_village|default:"N/A" }}
+                    </td>
+                    <td>{{ row.chennai_dosas|default:"N/A" }}</td>
+                    <td>{{ row.dosa_world|default:"N/A" }}</td>
+                    <td>{{ row.house_of_dosas|default:"N/A" }}</td>
+                    <td>{{ row.taste_of_chennai|default:"N/A" }}</td>
+                    <td>{{ row.mithaas|default:"N/A" }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="7">No data available</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Weather and Busy Time Section -->
+    <div class="busy-time">
+        <h3>Current Weather and Busy Times</h3>
+        <p><strong>Temperature:</strong> {{ weather_info.temperature }} °F</p>
+        <p><strong>Conditions:</strong> {{ weather_info.description }}</p>
+        <p><strong>Current Time:</strong> {{ current_time }}</p>
+        <h3>Busy Times:</h3>
+        <p><strong>Lunch:</strong> 11:00 AM - 3:00 PM</p>
+        <p><strong>Dinner:</strong> 5:00 PM - 10:00 PM</p>
+    </div>
+
+    <!-- Predicted Prices Section -->
+    <div class="predicted-price">
+        <h3>Predicted Prices for Village Restaurant</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Predicted Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                    <tr>
+                        <td>{{ row.item_name }}</td>
+                        <td>{{ row.predicted_village_price|default:"N/A" }}</td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="2">No data available</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
