@@ -1,4 +1,4 @@
-Name,Description,Price
+Item Name,Description,Price
 Rasam,South Indian spiced Lentil soup,$ 4.95
 Sambar,Lentil based Vegetable soup,$ 4.95
 Mulligatawny Soup,Lentil thick soup with pepper & spices,$ 4.95
@@ -146,7 +146,7 @@ Vendaikai Kulambu (Okra),Tender okra/lady's finger is simmered in tangy tamarind
 Murungaikai Kulambu (Drumstick),A spicy and tangy tamarind based curry made with drumsticks,$ 12.95
 Chennai Thali,"Idly, Vada, Dosa, Uthappam, Sambar, Chutney, Badam Halwa",$ 15.95
 South Indian Thali,"Sambar, Rasam, Kulambu, Kootu Avial, Poriyal, Pickle Yogurt, Pappadam, Rice, Semiya Payasam",$ 15.95
-North Indian Thali,"Chole, Daal, Any Paneer – Rice, Roti, Pickle, Raita, Kheer / Pappad",$ 15.95
+North Indian Thali,"Chole, Daal, Any Paneer ? Rice, Roti, Pickle, Raita, Kheer / Pappad",$ 15.95
 Roti,,$ 3.95
 Paratha,,$ 4.95
 Poori,,$ 4.95
